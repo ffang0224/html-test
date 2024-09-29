@@ -1,0 +1,57 @@
+html{
+    background-color: blanchedalmond;
+    border: 4px dotted blue;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    font-weight: bold;
+    text-align: center;
+}
+a:hover{
+    cursor: pointer;
+}
+a:visited{
+    color: red;
+}
+a:link{
+    color: purple;
+}
+a:active{
+    color: violet;
+}
+#mainPic{
+    border: 2px solid black;
+    box-shadow: 2px 5px 2px;
+}
+img{
+    border: 4px solid black;
+}
+.backBtn{
+    border: 2px solid black;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+#listFacts li{
+    margin: 50px 20px;
+    text-align: left;
+}
+#listFacts li h2{
+    font-size: 30px;
+}
+#listFacts{
+    font-size: 30px;
+}
