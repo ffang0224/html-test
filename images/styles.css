@@ -1,0 +1,19 @@
+body{
+    background-image: url("antarctica.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+}
+main img{
+    position: relative;
+    left: 3px;
+}
+#title{
+    display:block;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
