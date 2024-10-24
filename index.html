@@ -16,6 +16,37 @@
       font-style: italic;
       margin: 20px;
     }
+
+    /* SVG stuff */
+    .shape {
+      transition: all 0.3s ease;
+    }
+    .shape:hover {
+      transform: scale(1.05);
+    }
+    .shape:active {
+      filter: brightness(1.2);
+    }
+    text {
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+    }
+    #outer-circle {
+      fill: #3498db;
+    }
+    #inner-circle {
+      fill: #e74c3c;
+    }
+    #triangle {
+      fill: #2ecc71;
+    }
+    #square {
+      fill: #f39c12;
+    }
+    #initials {
+      fill: #ffffff;
+    }
+    /* End */
   </style>
   <body>
     <h1 class="title">Introduction to Web Design</h1>
@@ -23,6 +54,22 @@
       Hello! I am Fausto, a Junior majoring in Computer Science and Interactive
       Media.
     </p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+      <title>SVG Logo</title>
+      <a href="https://www.facebook.com/">
+        <circle id="outer-circle" class="shape" cx="100" cy="100" r="90" />
+      </a>
+
+      <a href="https://www.grubhub.com/">
+        <rect id="square" class="shape" x="60" y="60" width="80" height="80" />
+      </a>
+
+      <circle id="inner-circle" class="shape" cx="100" cy="100" r="40" />
+
+      <polygon id="triangle" class="shape" points="100,40 140,140 60,140" />
+
+      <text id="initials" x="85" y="110" font-size="24">FF</text>
+    </svg>
     <ul style="border: 5px solid black">
       <li><a href="./me/index.html">HTML</a></li>
       <li>CSS</li>
