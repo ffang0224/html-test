@@ -153,14 +153,17 @@ footer {
 @media (max-width: 768px) {
   .content-grid {
     grid-template-columns: 1fr;
+    margin: 20px;
   }
 
   .campaign-grid {
     grid-template-columns: 1fr;
+    margin: 20px;
   }
 
   .legacy-grid {
     grid-template-columns: 1fr;
+    margin: 20px;
   }
 
   nav ul {
