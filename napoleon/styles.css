@@ -51,6 +51,9 @@ h1 {
   font-size: 2.5em;
   color: #c41e3a;
 }
+h3{
+  text-align: center;
+}
 
 .content-grid {
   display: grid;
@@ -221,5 +224,53 @@ footer {
 
   .stat-number {
     color: #ff6f61;
+  }
+}
+nav {
+  position: relative;
+  padding: 20px 0;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-toggle svg {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-toggle svg {
+    color: #e0e0e0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  nav ul.nav-active {
+    display: flex;
   }
 }
